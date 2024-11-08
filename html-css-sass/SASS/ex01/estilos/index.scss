@@ -1,0 +1,7 @@
+@import './variaveis.scss';
+@import './header.scss';
+
+.contato {
+    @include flexCenter(column, gray);
+    
+}

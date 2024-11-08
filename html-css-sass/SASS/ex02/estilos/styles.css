@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3498db;
+  padding: 1rem 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
+
+.hero {
+  background-color: #2ecc71;
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero .btn {
+  background-color: white;
+  color: #2ecc71;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.hero .btn:hover {
+  background-color: #e6e6e6;
+}
+
+.services {
+  padding: 3rem 0;
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3498db;
+}
+.services .service-list {
+  display: flex;
+  justify-content: space-between;
+}
+.services .service-list .service-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+.services .service-list .service-item h3 {
+  color: #2ecc71;
+}
+.services .service-list .service-item p {
+  color: #333;
+}
+@media (max-width: 600px) {
+  .services .service-list {
+    flex-direction: column;
+  }
+  .services .service-list .service-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 3rem 0;
+  text-align: center;
+}
+.testimonials h2 {
+  margin-bottom: 2rem;
+  color: #3498db;
+}
+.testimonials .testimonial-item {
+  margin-bottom: 2rem;
+}
+.testimonials .testimonial-item p {
+  font-style: italic;
+}
+.testimonials .testimonial-item h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #3498db;
+  padding: 1rem 0;
+  text-align: center;
+}
+footer p {
+  color: white;
+  margin: 0;
+}
+
+/* Estilos globais */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

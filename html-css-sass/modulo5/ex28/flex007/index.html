@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir em Namoro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .yes {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .no {
+            background-color: #dc3545;
+            color: white;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quer ser minha namorada?</h1>
+        <button class="yes" onclick="responder('sim')">Sim ❤️</button>
+        <button class="no" onmouseover="moverBotao()">Não ❌</button>
+    </div>
+
+    <script>
+        function moverBotao() {
+            const botaoNo = document.querySelector('.no');
+            const larguraJanela = window.innerWidth - 150; // 150 é a largura do botão
+            const alturaJanela = window.innerHeight - 70; // 70 é a altura do botão
+
+            const novaPosicaoX = Math.random() * larguraJanela;
+            const novaPosicaoY = Math.random() * alturaJanela;
+
+            botaoNo.style.position = 'absolute';
+            botaoNo.style.left = `${novaPosicaoX}px`;
+            botaoNo.style.top = `${novaPosicaoY}px`;
+        }
+
+        function responder(resposta) {
+            if (resposta === 'sim') {
+                alert('Uhuul! Fico muito feliz! 💖');
+            } else {
+                alert('Você não pode dizer não! Tente de novo! 😉');
+            }
+        }
+    </script>
+</body>
+</html>

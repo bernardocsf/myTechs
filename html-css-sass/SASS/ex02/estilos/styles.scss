@@ -1,0 +1,25 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'services';
+@import 'testimonials';
+@import 'footer';
+
+/* Estilos globais */
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: $light-bg;
+  color: $text-color;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
